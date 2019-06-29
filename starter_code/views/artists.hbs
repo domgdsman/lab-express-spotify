@@ -1,0 +1,11 @@
+<div id="artist-list-page">
+  <div class="artist-list-container">
+    {{#each artistList}}
+    <div class="artist-container">
+      <img src="{{images.0.url}}" onerror="this.src='/images/download.jpeg';" alt="{{ name }} image">
+      <p>{{ name }}</p>
+      <a href="/albums/{{id}}">View Albums</a>
+    </div>
+    {{/each}}
+  </div>
+</div>

@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #efefef;
+}
+
+#landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/images/spotify-cover-image.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: fixed;
+}
+
+.search-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22vh;
+  width: 50vw;
+  background: rgba(239, 239, 239, 0.85);
+}
+.search-field form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#search-bar {
+  width: 550px;
+  height: 40px;
+  margin: 5px;
+  padding: 0 15px;
+  border-radius: 0;
+  border-color: rgb(181, 174, 163);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 1em;
+}
+
+#landing form button {
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+  padding: 0;
+  background: rgb(237, 112, 107);
+  color: white;
+  font-size: 1.1em;
+  border: none;
+}
+
+#landing form button:hover {
+  color: rgb(237, 112, 107);
+  background: white;
+  border: solid 1px rgb(237, 112, 107);
+}
+
+#artist-list-page {
+  width: 100vw;
+}
+
+.artist-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.artist-container {
+  width: 300px;
+  /* height: 365px; */
+  height: auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(77, 77, 77);
+}
+
+.artist-container img {
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.artist-container p {
+  color: white;
+  margin: 3px;
+  font-weight: normal;
+}
+
+.artist-container a {
+  width: 90px;
+  height: 25px;
+  margin: 5px;
+  margin-bottom: 12px;
+  padding: 0;
+  background: rgb(237, 112, 107);
+  color: white;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+.artist-container a:hover {
+  text-decoration: underline;
+}
+
+#track-list-page {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  background: rgb(74, 74, 74);
+  color: white;
+}
+
+#title {
+  margin-left: 20px;
+  margin-right: 60vw;
+  font-weight: lighter;
+}
+
+#listen {
+  font-weight: lighter;
+}
+
+.track-container {
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  margin-bottom: 3px;
+  background: #dcdcdc;
+  justify-content: space-between;
+}
+
+.track-container p {
+  margin-left: 20px;
+}
+
+.track-container figure {
+  align-self: flex-end;
+}

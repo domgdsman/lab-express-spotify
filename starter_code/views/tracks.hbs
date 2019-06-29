@@ -1,0 +1,19 @@
+<div id="track-list-page">
+  <header>
+    <h1 id="title">Title</h1>
+    <h1 id="listen">Listen</h1>
+  </header>
+  <div class="track-list-container">
+    {{#each trackList}}
+    <div class="track-container">
+      <p>{{ name }}</p>
+      <figure>
+        <audio controls src="{{preview_url}}">
+          Your browser does not support the
+          <code>audio</code> element.
+        </audio>
+      </figure>
+    </div>
+    {{/each}}
+  </div>
+</div>
